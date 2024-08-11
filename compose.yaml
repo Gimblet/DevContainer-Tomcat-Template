@@ -1,0 +1,18 @@
+services:
+  web-server:
+    networks:
+      - shared:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: TomcatWS
+  db:
+    image: mysql:8.0.38
+    networks:
+      - shared:
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD: Cibertec2024
+networks:
+  - shared:
