@@ -17,8 +17,8 @@ public class Servlet extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String nombre = request.getParameter("txttexto");
-		request.getRequestDispatcher("hola.jsp").forward(request, response);
+		String nombre = request.getParameter("nombreapellido");
 		request.setAttribute("key", nombre);
+		request.getRequestDispatcher("hola.jsp").forward(request, response);
 	}
 }

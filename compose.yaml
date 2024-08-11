@@ -1,16 +1,16 @@
 services:
   web-server:
     build:
-      context: /.
+      context: .
       dockerfile: Dockerfile
     container_name: TomcatWS
     ports:
       - "8888:8080"
     develop:
       watch:
-        - action: sync
-          target: /usr/local/tomcat/webapps
-          path: /target/*.war
+        - action: rebuild
+          path: target/funciona-latest/
+          target: /usr/local/tomcat/webapps/funciona
   db:
     image: mysql:8.0.38
     container_name: MySQL-Database
