@@ -18,7 +18,19 @@
 		}
 	},
 
-	"postCreateCommand": "mvn clean install"
+	"postCreateCommand": "mvn clean install",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode-remote.remote-containers",
+				"ms-azuretools.vscode-docker",
+				"appulate.filewatcher",
+				"formulahendry.auto-rename-tag",
+				"aaron-bond.better-comments"
+			]
+		}
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
