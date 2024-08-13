@@ -14,7 +14,8 @@
 				"formulahendry.auto-rename-tag",
 				"aaron-bond.better-comments",
 				"redhat.java",
-				"vscjava.vscode-maven"
+				"vscjava.vscode-maven",
+				"samuel-weinhardt.vscode-jsp-lang"
 			]
 		}
 	}

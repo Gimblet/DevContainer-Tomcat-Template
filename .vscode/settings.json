@@ -1,4 +1,8 @@
 {
   "java.configuration.updateBuildConfiguration": "interactive",
-  "java.jdt.ls.java.home": "/usr/lib/jvm/java-1.17.0-openjdk-amd64"
+  "java.jdt.ls.java.home": "/usr/lib/jvm/java-1.17.0-openjdk-amd64",
+  "emmet.includeLanguages": {"jsp": "html"},
+  "files.associations": {
+    "*.jsp": "jsp"
+  }
 }

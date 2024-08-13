@@ -2,7 +2,7 @@
 sudo apt update
 
 #INSTALL MAVEN AND JAVA 17
-sudo apt install maven openjdk-17-jdk -y
+sudo apt install openjdk-17-jdk maven -y
 
 #GETS TO THE PROJECT DIRECTORY
 cd /workspaces/funciona/
