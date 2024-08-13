@@ -1,24 +1,9 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/java
 {
-	"name": "Java",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/java:1-17-bullseye",
-
-	"features": {
-		"ghcr.io/devcontainers/features/java:1": {
-			"version": "none",
-			"installMaven": "true",
-			"installGradle": "false"
-		},
-		"ghcr.io/devcontainers-contrib/features/maven-sdkman:2": {
-			"version": "latest",
-			"jdkVersion": "17",
-			"jdkDistro": "ms"
-		}
-	},
-
-	"postCreateCommand": "mvn clean install",
+	"name": "Debian",
+	"image": "mcr.microsoft.com/devcontainers/base:bookworm",
+	"postCreateCommand": "cd .devcontainer && bash postcreatecommand.sh",
 
 	"customizations": {
 		"vscode": {
@@ -27,7 +12,9 @@
 				"ms-azuretools.vscode-docker",
 				"appulate.filewatcher",
 				"formulahendry.auto-rename-tag",
-				"aaron-bond.better-comments"
+				"aaron-bond.better-comments",
+				"redhat.java",
+				"vscjava.vscode-maven"
 			]
 		}
 	}
