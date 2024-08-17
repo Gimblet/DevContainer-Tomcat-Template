@@ -11,7 +11,7 @@
 	<body>
 		<h1 style="color: black">This might be the last <strong>one</strong>right?</h1>
 		<form action="Servlet" action="post">
-			<label>Escribe tu nombre y apellido</label>
+			<label>Escribe tu nombre y apellidos</label>
 			<input type="texto" name="nombreapellido">
 			<input type="submit" value="Enviar">
 		</form>
